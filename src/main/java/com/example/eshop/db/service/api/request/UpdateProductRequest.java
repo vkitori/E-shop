@@ -17,6 +17,7 @@ public class UpdateProductRequest {
     @NonNull
     public String getName() {
         return name;
+
     }
 
     @NonNull
