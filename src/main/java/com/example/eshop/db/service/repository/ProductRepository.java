@@ -82,5 +82,7 @@ public class ProductRepository {
     }
 
     public void updateAvailable(int id, int newAvailable) {
+        final String sql = "UPDATE product set available = ? WHERE id = ?";
+        jdbcTemplate.update(sql, newAvailable, id);
     }
 }
